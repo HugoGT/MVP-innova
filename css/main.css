@@ -8,7 +8,7 @@
   --green: #aec999;
   --light-green: #c4dfb8;
   --dark-green: #3c763d;
-  --grey: #c3c3c3;
+  --grey: #c6c6c6;
   --dark-grey: #525252;
   --black: #121010;
 }
@@ -62,11 +62,14 @@ nav ul {
 nav a {
   color: var(--dark-grey);
 }
-
-/** Main **/
 h1 {
   font-size: 4.2rem;
 }
+h2 {
+  font-size: 3.6rem;
+}
+
+/** Main **/
 .hero {
   position: relative;
   height: 60vh;
@@ -100,4 +103,44 @@ h1 {
   object-fit: cover;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+.services-title {
+  padding: 2rem;
+}
+.services-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: auto;
+  max-width: 1200px;
+}
+.services-cards img {
+  width: 100%;
+  height: 100%;
+  max-width: 640px;
+  max-height: 360px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.services-cards .card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+}
+#author {
+font-size: 1.2rem;
 }
