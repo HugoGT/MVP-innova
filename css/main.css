@@ -2,7 +2,7 @@
   font-size: 62.5%;
   --blue: #298edb;
   --soft-blue: #a8eeff;
-  --pastel-blue: #206b82;
+  --pastel-blue: #6a8da4;
   --white: #fff;
   --off-white: #ebebeb;
   --green: #aec999;
@@ -20,6 +20,7 @@
 }
 html {
   scroll-behavior: smooth;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
 }
 body {
   font-size: 1.6rem;
@@ -34,6 +35,7 @@ a,
 a:active,
 a:visited,
 a:link {
+  color: inherit;
   height: inherit;
   text-decoration: none;
 }
@@ -47,16 +49,55 @@ nav {
   height: 60px;
   width: 100%;
   min-width: 320px;
-  margin-bottom: 20px;
 }
 nav img {
   width: 140px;
   height: 60px;
   align-self: center;
 }
-nav li, nav ul {
+nav li,
+nav ul {
   margin: 0 8px;
 }
 nav a {
   color: var(--dark-grey);
+}
+
+/** Main **/
+h1 {
+  font-size: 4.2rem;
+}
+.hero {
+  position: relative;
+  height: 60vh;
+  width: 100%;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: var(--pastel-blue);
+  display: flex;
+  align-items: center;
+}
+.hero-left {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 80px;
+  height: 100%;
+  width: 44%;
+  color: var(--white);
+  z-index: 2;
+}
+.hero-right {
+  position: absolute;
+  right: 0;
+  width: 64%;
+  height: 100%;
+}
+.hero-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
 }
