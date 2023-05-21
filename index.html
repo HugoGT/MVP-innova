@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="shortcut icon" href="./img/innova-logo.png">
+    <link rel="shortcut icon" href="./img/innova-logo.jpg" />
     <title>Innova Arquitectos</title>
   </head>
 
@@ -14,7 +14,7 @@
     <nav>
       <div>
         <a href="#">
-          <img alt="Innova logo" src="./img/innova-logo.png" />
+          <img alt="Innova logo" src="./img/innova-logo.jpg" />
         </a>
       </div>
       <div>
@@ -65,7 +65,67 @@
 
     <!-- Footer -->
     <footer>
-      <p id="author">Diseño por Hugo Gómez - Todos los derechos reservados &copy; 2023</p>
+      <section class="contact" id="contact">
+        <div class="contact-title">
+          <h2>Contacta con nosotros</h2>
+        </div>
+
+        <div class="contact-wrapper">
+          <div class="contact-form">
+            <h3>Formulario de contacto</h3>
+            <form action="/" method="post" class="form">
+              <input
+                required
+                placeholder="Nombre"
+                type="username"
+                class="form-input"
+                id="InputUsername"
+                aria-describedby="emailHelp"
+                name="username"
+              />
+              <input
+                required
+                placeholder="Correo"
+                type="username"
+                class="form-input"
+                id="InputUsername"
+                aria-describedby="emailHelp"
+                name="username"
+              />
+              <input
+                required
+                placeholder="Asunto"
+                type="username"
+                class="form-input"
+                id="InputUsername"
+                aria-describedby="emailHelp"
+                name="username"
+              />
+              <textarea
+                required
+                class="form-input"
+                name="biography"
+                placeholder="Déjanos un mensaje"
+              ></textarea>
+              <button type="submit" class="form-btn">Enviar</button>
+            </form>
+          </div>
+          <div class="contact-info">
+            <h3>Más información</h3>
+            <div>
+              <p>Dirección: Av. El Carmen 611 Ofic.101 - Santiago de Surco</p>
+              <br />
+              <p>Teléfono: (01)777-7777</p>
+              <br />
+              <p>Celular: 939135303</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <p id="author">
+        Diseño por Innova Arq. y Hugo Gómez - Todos los derechos reservados
+        &copy; 2023
+      </p>
     </footer>
   </body>
 </html>
