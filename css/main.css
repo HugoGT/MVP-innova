@@ -4,7 +4,7 @@
   --pastel-green: #5ab8a0;
   --white: #f6f6f6;
   --off-white: #ebebeb;
-  --grey: #ababab;
+  --grey: #aaaaaa;
   --dark-grey: #5e5e5e;
   --black: #121010;
 }
@@ -41,6 +41,9 @@ h2 {
 }
 h3 {
   font-size: 2.4rem;
+}
+.bg-green {
+  background-color: var(--pastel-green);
 }
 
 /* Navbar */
@@ -89,13 +92,10 @@ nav a {
 /** Main **/
 .hero {
   position: relative;
-  height: 60vh;
-  width: 100%;
-  background-size: cover;
-  background-blend-mode: multiply;
-  background-color: var(--pastel-green);
   display: flex;
   align-items: center;
+  height: 60vh;
+  width: 100%;
 }
 .hero-left {
   position: absolute;

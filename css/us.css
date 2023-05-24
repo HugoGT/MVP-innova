@@ -1,0 +1,39 @@
+.us-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 100%;
+  background-color: var(--dark-grey);
+}
+.us-hero img {
+  width: 480px;
+  height: 360px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 920px;
+  padding: 4rem;
+  margin: 0 auto;
+  gap: 32px;
+  font-size: 1.8rem;
+  text-align: justify;
+}
+.wrapper h2 {
+  display: inline-block;
+  padding-bottom: 8px;
+  font-size: 3.2rem;
+}
+.wrapper li {
+  margin-bottom: 8px;
+}
+.wrapper li b {
+  text-transform: uppercase;
+}
+.wrapper li::before {
+  content: "-"
+}
