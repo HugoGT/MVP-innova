@@ -122,16 +122,16 @@ nav a {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
 }
 
-.services {
+.cards-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 4rem;
 }
-.services-title {
+.cards-title {
   padding: 2rem;
 }
-.services-cards {
+.cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
@@ -226,4 +226,54 @@ footer {
   width: 100%;
   text-align: right;
   font-size: 1rem;
+}
+
+/* Pag Mision */
+.us-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 100%;
+  background-color: var(--dark-grey);
+}
+.us-hero img {
+  width: 480px;
+  height: 360px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 920px;
+  padding: 4rem;
+  margin: 0 auto;
+  gap: 32px;
+  font-size: 1.8rem;
+  text-align: justify;
+}
+.wrapper h2 {
+  display: inline-block;
+  padding-bottom: 8px;
+  font-size: 3.2rem;
+}
+.wrapper li {
+  margin-bottom: 8px;
+}
+.wrapper li b {
+  text-transform: uppercase;
+}
+.wrapper li::before {
+  content: "-"
+}
+
+/* Pag clientes */
+.client-card {
+  filter: grayscale(100%);
+  transition: filter 0.4s ease;
+}
+.client-card:hover {
+  filter: none;
 }
